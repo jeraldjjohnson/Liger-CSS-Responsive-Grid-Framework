@@ -1,0 +1,277 @@
+doctype html
+html(lang="en")
+	head
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	title Liger: Experimental Grid
+	link(rel="stylesheet", href="css/liger.css")
+	body
+		.row.collapse
+			.large-12.columns
+				.menu
+					nav
+						ul
+							li
+								a(href="home.html") Home
+							li
+								a(href="products.html")	Products
+									span.caret
+								div
+									ul
+										li
+											a(href="products.html#chair") Chair
+												span.caret
+											div
+												ul
+													li
+														a(href="#") 1
+													li
+														a(href="#") 2
+													li
+														a(href="#") 3
+													li
+														a(href="#") 4
+													li
+														a(href="#") 5
+										li
+											a(href="products.html#table") Table
+										li
+											a(href="cooker.html") Cooker
+							li
+								a(href="about.html") About
+							li
+								a(href="help.html") Help
+		.row
+			.large-12.columns
+				h1 Experimental Grid "Liger"
+		.row
+			.large-12.columns
+				.panel
+					h3 This is an experimental CSS grid codenamed Liger. While majority, if not all, CSS grids are constructed by a "mobile first" approach, Liger is desktop first.
+					.row
+						.large-4.medium-4.columns
+							p Row 1 Column 1
+								br
+								| These is sample column within a row.
+						.large-4.medium-4.columns
+							p Row 1 Column 2
+								br
+								| These is sample column within a row.
+						.large-4.medium-4.columns
+							p Row 1 Column 3
+								br
+								| These is sample column within a row.
+					.row
+						.large-4.medium-4.large-offset-2.columns.panel.bg-teal.white
+							p Row 2 Column 1
+								br
+								| The large-offset-2 class on this offsets this div by 2 columns. Also the offset only appears on the desktop size because of the large attribute. 
+						.large-4.medium-4.large-offset-1.medium-offset-1.columns
+							p Row 2 Column 2
+								br
+								| The large-offset-1 and medium-offset-1 class on this offsets this div by 1 column. Also the offset appears on the desktop and tablet size because of the large and medium attribute. 
+		.row
+			.large-12.columns
+				.billboard
+					h1 Billboard Component!
+					p A simple component for calling extra attention to featured content or information.
+					p
+						a.simple.button.bg-aqua(href="#", role="button") Learn more
+		.row
+			.large-12.columns
+				.slider-button-wrap
+					.--prev
+						i.fa.fa-chevron-left.fa-3x
+					.--next
+						i.fa.fa-chevron-right.fa-3x
+				.slider
+					.--animated.--fadeIn(style="display: inline-block;")
+						img(src="http://placeimg.com/400/200/people")
+					.--animated.--fadeIn
+						img(src="http://placeimg.com/400/200/any")
+					.--animated.--fadeIn
+						img(src="http://placeimg.com/400/200/nature")
+					.--animated.--fadeIn
+						img(src="http://placeimg.com/400/200/architecture")
+					.--animated.--fadeIn
+						img(src="http://placeimg.com/400/200/animals")
+					.--animated.--fadeIn
+						img(src="http://placeimg.com/400/200/people")
+					.--animated.--fadeIn
+						img(src="http://placeimg.com/400/200/tech")
+		.row
+			.large-8.medium-8.columns
+				h5 Here&#8217;s your basic grid:
+				// Grid Example
+				.row
+					.large-12.columns
+						p.panel.bg-silver This is a twelve column section in a row.
+				.row
+					.large-6.medium-6.columns
+						p.panel.bg-silver Six columns
+					.large-6.medium-6.columns
+						p.panel.bg-silver Six columns
+				.row
+					.large-4.medium-4.small-4.columns
+						p.panel.bg-silver Four columns
+					.large-4.medium-4.small-4.columns
+						p.panel.bg-silver Four columns
+					.large-4.medium-4.small-4.columns
+						p.panel.bg-silver Four columns
+				hr
+				h5 We bet you&#8217;ll need a form somewhere:
+				form
+					.row
+						.large-12.columns
+							label Input Label
+							input(type="text", placeholder="large-12.columns")
+					.row
+						.large-4.medium-4.columns
+							label Input Label
+							input(type="text", placeholder="large-4.columns")
+						.large-4.medium-4.columns
+							label Input Label
+							input(type="text", placeholder="large-4.columns")
+						.large-4.medium-4.columns
+							.row.collapse
+								label Input Label
+								.small-9.columns
+								input(type="text", placeholder="small-9.columns")
+								.small-4.columns
+								span.postfix .com
+					.row
+						.large-12.columns
+							label Select Box
+							select
+								option(value="husker") Husker
+								option(value="starbuck") Starbuck
+								option(value="hotdog") Hot Dog
+								option(value="apollo") Apollo
+					.row
+						.large-6.medium-6.columns.animated
+							.input-group.full-width
+								input.full-width(type="text")
+								label.gold Animated Input Label
+						.large-6.medium-6.columns.animated
+							.input-group.full-width
+								input.full-width(type="text")
+								label.gold Animated Input Label
+					.row
+						.large-6.medium-6.columns
+							label Choose Your Favorite
+							input#radio1(type="radio", name="pokemon", value="Red")
+							label(for="radio1") Radio 1
+							input#radio2(type="radio", name="pokemon", value="Blue")
+							label(for="radio2") Radio 2
+						.large-6.medium-6.columns
+							label Check these out
+							input#checkbox1(type="checkbox")
+							label(for="checkbox1") Checkbox 1
+							input#checkbox2(type="checkbox")
+							label(for="checkbox2") Checkbox 2
+					.row
+						.large-6.medium-6.columns
+							label Check these out
+							br
+							label
+								input(type="radio", name="radio")
+								span.label-text ITEM ONE
+							br
+							label
+								input(type="radio", name="radio")
+								span.label-text ITEM TWO
+						.large-6.medium-6.columns
+							label Check these out
+							br
+							label
+								input(type="checkbox", name="check")
+								span.label-text ITEM ONE
+							br
+							label
+								input(type="checkbox", name="check")
+								span.label-text ITEM TWO
+					.row
+						.large-12.columns
+							label Textarea Label
+							textarea(placeholder="small-12.columns")
+				.row
+					.large-4.medium-6.columns
+						.pod
+							img.full-width(src="http://fpoimg.com/242x200", alt="100%x200")
+							.caption
+								h3 Thumbnail label
+								p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					.large-4.medium-6.columns
+						.pod
+							img.full-width(src="http://fpoimg.com/242x200", alt="100%x200")
+							.caption
+								h3 Thumbnail label
+								p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					.large-4.medium-6.columns
+						.pod
+							img.full-width(src="http://fpoimg.com/242x200", alt="100%x200")
+							.caption
+								h3 Thumbnail label
+								p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+				.row
+					.large-12.columns
+						.media
+							.--left
+								a(href="#", style="display:block")
+									img.--media-object(src="http://fpoimg.com/64x64", alt="100%x200")
+							.--body
+								h4.--heading Media heading
+								| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+				.row
+					.large-12.columns
+						ul.media-list
+							li.media
+								.--left
+									a(href="#")
+									img.--object(alt="64x64", src="http://fpoimg.com/64x64")
+								.--body
+									h4.--heading Media heading
+									p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+									// Nested media object
+									.media
+										.--left
+											a(href="#")
+											img.--object(data-src="holder.js/64x64", alt="64x64", style="width: 64px; height: 64px;", src="http://fpoimg.com/64x64", data-holder-rendered="true")
+										.--body
+											h4.--heading Nested media heading
+											| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+											// Nested media object
+											.media
+												.--left
+													a(href="#")
+													img.--object(alt="64x64", src="http://fpoimg.com/64x64")
+												.--body
+													h4.--heading Nested media heading
+													| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+										// Nested media object
+										.media
+											.--left
+												a(href="#")
+												img.--object(alt="64x64", src="http://fpoimg.com/64x64")
+											.--body
+												h4.--heading Nested media heading
+												| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			.large-4.medium-4.columns
+				h5 Try one of these buttons:
+				p
+					a.small.button(href="#") Simple Button
+					br
+					a.small.white.bg-aqua.button.round(href="#") Round Button
+					br
+					a.small.button.circle(href="#") Circle <br>Button
+					br
+					a.medium.button.shadow(href="#") Shadow Button
+					br
+					a.medium.full-width.button(href="#") Expanded Button
+				.panel
+					h5 Thanks!
+					p
+					| If you stumbled upon this experimental CSS grid, thank you for taking the time to check it out.
+		script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+		script(src="js/liger.js")
+		script(src="js/modernizr.js")
