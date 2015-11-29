@@ -7,6 +7,6 @@ Although anybody is free to use this, Liger is css grid with web designers & dev
 
 With Liger you can customize your css to use only the css you want, develop responsive websites in a more natural way with a desktop first approach, and much more! 
 
-Liger.html is a sample file that shows how the grid works as well as the various components. It's meant to be a reference if you need. 
+index.html is a sample file that shows how the grid works as well as the various components. It's meant to be a reference if you need. View the rendered index page at http://jeraldjjohnson.github.io/Liger-CSS-Responsive-Grid-Framework/
 
 Please visits www.designsbyjerald.com/liger for more information on how to use the Liger Grid, as well as its features.
