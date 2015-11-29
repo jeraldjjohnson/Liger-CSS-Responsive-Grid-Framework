@@ -1,5 +1,5 @@
 /*SLIDER*/
-.--animated {
+.animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -26,7 +26,7 @@
   }
 }
 
-.--fadeIn {
+.fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -57,7 +57,7 @@
     right: 0;
 }
 
-.--next, .--prev {
+.next, .prev {
 	background: rgba(0, 0, 0, 0.7);
   padding: 7px;	
 	color: rgba(255, 255, 255, 0.7);
@@ -65,17 +65,17 @@
 	transition:all .1s ease-in-out;
 }
 
-.--next:hover, .--prev:hover {	
+.next:hover, .prev:hover {	
 	color: rgba(255, 255, 255, 1);
 }
-.--next {
+.next {
 	position: absolute;
 	right: 14px;
 
   
 }
 
-.--prev {
+.prev {
 	position: absolute;
 	left: 14px;
 }

@@ -1,15 +1,14 @@
 /* BUTTON */
 button, .button {
-    padding: .6em 1.2em;
-    display: inline-block;
+  padding: .6em 1.2em;
+  display: inline-block;
 	font-size:1em;
 	line-height:1.4;
-	background-color:#eee;
 	text-align: center;
-    white-space: nowrap;
+  white-space: nowrap;
 	cursor:pointer;
 	text-decoration: none;
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 	color:black;
 	position:relative;
 	transform:scale(1);
@@ -17,7 +16,7 @@ button, .button {
 }
 
 button:hover, .button:hover{
-	transform:scale(1.15)	
+	transform:scale(1.05)	
 }
 
 .round {

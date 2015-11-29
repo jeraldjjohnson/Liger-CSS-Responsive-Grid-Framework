@@ -49,7 +49,7 @@ var autoSlide = setInterval(function() {
   cycleItems();
 }, 3000);
 
-$('.--next').click(function() {
+$('.next').click(function() {
   clearInterval(autoSlide);
   currentIndex += 1;
   if (currentIndex > itemAmt - 1) {
@@ -58,7 +58,7 @@ $('.--next').click(function() {
   cycleItems();
 });
 
-$('.--prev').click(function() {
+$('.prev').click(function() {
   clearInterval(autoSlide);
   currentIndex -= 1;
   if (currentIndex < 0) {
